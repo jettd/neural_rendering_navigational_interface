@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "custom-viewer"
+version = "0.1.0"
+description = "Custom viewer for Nerfstudio"
+requires-python = ">=3.8"
+dependencies = ["nerfstudio>=1.0.0"]
+
+[project.entry-points."nerfstudio.viewer_configs"]
+custom_viewer = "custom_viewer.viewer_state:CustomViewerState"

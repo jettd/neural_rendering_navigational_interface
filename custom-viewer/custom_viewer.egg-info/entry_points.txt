@@ -1,0 +1,2 @@
+[nerfstudio.viewer_configs]
+custom_viewer = custom_viewer.viewer_state:CustomViewerState
